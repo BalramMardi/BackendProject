@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import Role from "../models/roleModel.js";
 import User from "../models/userModel.js";
 
-const JWT_SECRET = process.env.JWT_SECRET || "your_secret_key";
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // Authenticate JWT
 export const authenticateToken = (req, res, next) => {
